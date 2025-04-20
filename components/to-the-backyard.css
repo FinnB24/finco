@@ -1,0 +1,112 @@
+.to-the-backyard-layout349 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.to-the-backyard-max-width {
+  gap: var(--dl-layout-space-fiveunits);
+  display: flex;
+  align-items: center;
+}
+ 
+.to-the-backyard-image-container {
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+ 
+.to-the-backyard-content1 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.to-the-backyard-section-title {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.to-the-backyard-content2 {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.to-the-backyard-text10 {
+  fill: var(--dl-color-theme-secondary1);
+  color: var(--dl-color-theme-secondary1);
+}
+ 
+.to-the-backyard-actions {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+}
+ 
+.to-the-backyard-button {
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: var(--dl-layout-space-oneandhalfunits);
+  padding-right: var(--dl-layout-space-oneandhalfunits);
+  padding-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.to-the-backyard-fragment1 {
+  display: contents;
+}
+ 
+.to-the-backyard-text11 {
+  display: inline-block;
+}
+ 
+.to-the-backyard-text12 {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ 
+.to-the-backyard-text13 {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ 
+.to-the-backyard-text14 {
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ 
+.to-the-backyard-fragment2 {
+  display: contents;
+}
+ 
+.to-the-backyard-text22 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .to-the-backyard-max-width {
+    gap: var(--dl-layout-space-twounits);
+    flex-direction: column;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .to-the-backyard-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .to-the-backyard-button {
+    width: 100%;
+  }
+}
