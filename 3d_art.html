@@ -1,99 +1,94 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>3D Art</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-
-	<body class="is-preload" style="background-color:rgb(52, 52, 52);">
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="who.html">Who am I?</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="sidequests.html">Sidequests</a></li>
-						</ul>
-					</nav>
-
-					<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<a href="index.html" class="button small" style="margin-top: 10px;">
-								Back
-							</a>
-							
-							<div style="height: 10px;"></div>
-							<h2 style="color:rgb(235, 235, 235);">
-								3D Art
-							</h2>
-							<p style="color:rgb(235, 235, 235);">
-								Just pixels on a screen.
-							</p>
-						
-					
-						<!-- Images -->
-						<section>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-
-									<div class="col-4">
-										<span class="image fit">
-											<img src="images/pic01.jpg" alt="" />
-										</span>
-									</div>
-
-									<div class="col-4">
-										<span class="image fit">
-											<img src="images/pic02.jpg" alt="" />
-											<p>Text</p>
-										</span>
-									</div>
-
-									<div class="col-4">
-										<span class="image fit">
-											<img src="images/pic03.jpg" alt="" />
-										</span>
-									</div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-						</section>
-					</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Art | FinnB24</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Gallery of 3D Art by FinnB24.">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      background-color: #343434;
+      margin: 0;
+    }
+    .button.small {
+      display: inline-block;
+      padding: .4rem 1rem;
+      font-size: 1rem;
+      background: #444;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s;
+      margin-bottom: 1rem;
+    }
+    .button.small:hover {
+      background: #666;
+    }
+    .gallery-grid-3d {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .gallery-grid-3d img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #232323;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    main {
+      background: #262626;
+      color: #eaeaea;
+      border-radius: 1rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      padding: 2rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+    header, nav {
+      background: #202020;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-container" style="max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 0;">
+        <a href="index.html" style="font-weight:bold;color:#eaeaea;letter-spacing:1px;font-size:1.3rem;">FinnB24</a>
+        <ul style="list-style:none;display:flex;gap:2rem;margin:0;padding:0;font-size:1rem;">
+          <li><a href="index.html" style="color:#eaeaea;text-decoration:none;">Home</a></li>
+          <li><a href="who.html" style="color:#eaeaea;text-decoration:none;">Who am I?</a></li>
+          <li><a href="contact.html" style="color:#eaeaea;text-decoration:none;">Contact</a></li>
+          <li><a href="sidequests.html" style="color:#eaeaea;text-decoration:none;">Sidequests</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <a href="index.html" class="button small" aria-label="Back to Home">&larr; Back</a>
+    <h2 style="color:rgb(235, 235, 235);">3D Art</h2>
+    <p style="color:rgb(200, 200, 200);">
+      Just pixels on a screen.
+    </p>
+    <section aria-label="3D Art Gallery">
+      <div class="gallery-grid-3d">
+        <img src="images/pic01.jpg" alt="3D artwork 1" />
+        <img src="images/pic02.jpg" alt="3D artwork 2" />
+        <img src="images/pic03.jpg" alt="3D artwork 3" />
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+  </main>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
