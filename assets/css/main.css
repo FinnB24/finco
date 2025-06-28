@@ -1,6 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
-
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -14,7 +15,7 @@ code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+tfoot, thead, tr, th, td, tl, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -145,7 +146,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: #a4a4a4;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
@@ -1841,7 +1842,7 @@ input, select, textarea {
 			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			background-color: transparent;
-			border: solid 1px #c9c9c9;
+			border: solid 1px #d1d1d1da;
 			border-radius: 4px;
 			width: 2.65em;
 			height: 2.65em;
@@ -1851,17 +1852,18 @@ input, select, textarea {
 			color: inherit;
 		}
 
-			.icon.style2:before {
-				font-size: 1.1em;
+			.icon.style2:hover {
+				color: #d7d7d7;
+				border-color: #dadadafb;
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #dadadaf0;
+				border-color: #f0f0f0b3;
 			}
 
 			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
+				background-color: rgba(195, 195, 195, 0.918);
 			}
 
 /* List */
@@ -2387,7 +2389,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #c9c9c9;
+			border: solid 1px rgba(144, 144, 144, 0.075);
 			border-left: 0;
 			border-right: 0;
 		}
@@ -2397,12 +2399,14 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			text-align: left;
+			padding: 0.5em 0.5em 0.5em;
 		}
 
+
 		table th {
-			font-size: 0.9em;
-			font-weight: 900;
+			font-size: 1em;
+			font-weight: 510;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
@@ -2733,11 +2737,11 @@ input, select, textarea {
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #7ecaf600;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #7bd0c000;
 			}
 
 			.tiles article.style4 > .image:before {
@@ -3350,3 +3354,195 @@ input, select, textarea {
 			}
 
 		}
+
+/* Toggle Switch (From Uiverse.io by TahaShameli) */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333;
+  transition: 0.4s;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: #fff000;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider .circle {
+  transform: rotate(0deg) translateX(1.5em) !important;
+}
+
+.switch input:checked + .slider .circle .shine {
+  transform: translate(0%, 0%) !important;
+}
+
+.switch input:checked + .slider .circle .moon {
+  left: -10%;
+  opacity: 1;
+  transform: translateY(-60%);
+}
+
+.moon {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  opacity: 0;
+  background-color: #333;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 99999px;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+}
+
+.shine {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #fff000;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+
+.shine-1 {
+  transform: translate(-50%, -375%);
+}
+.shine-2 {
+  transform: translate(175%, -275%);
+}
+.shine-3 {
+  transform: translate(275%, -50%);
+}
+.shine-4 {
+  transform: translate(175%, 175%);
+}
+.shine-5 {
+  transform: translate(-50%, 275%);
+}
+.shine-6 {
+  transform: translate(-275%, 175%);
+}
+.shine-7 {
+  transform: translate(-375%, -50%);
+}
+.shine-8 {
+  transform: translate(-275%, -275%);
+}
+
+/* Default dark theme */
+body {
+    background-color: rgb(52, 52, 52);
+    color: rgb(235, 235, 235);
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Text elements */
+body.light-theme p,
+body.light-theme li,
+body.light-theme ul,
+body.light-theme ol,
+body.light-theme blockquote,
+body.light-theme .inner,
+body.light-theme header,
+body.light-theme footer,
+body.light-theme div {
+    color: #000000 !important;
+}
+
+/* Links */
+body.light-theme a {
+    color: #000000;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+body.light-theme a:hover {
+    color: #f2849e !important;
+}
+
+/* Menu */
+body.light-theme #menu {
+    background-color: #f6f6f6;
+    color: #585858;
+}
+
+body.light-theme #menu a {
+    color: #585858;
+}
+
+body.light-theme #menu a:hover {
+    color: #f2849e !important;
+}
+
+
+/* Font Toggle Styles */
+.switch .font-1,
+.switch .font-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.4s;
+}
+
+.switch .font-2 {
+    opacity: 0;
+}
+
+.switch input:checked + .slider .font-1 {
+    opacity: 0;
+}
+
+.switch input:checked + .slider .font-2 {
+    opacity: 1;
+}
+
+
+/* Font Families */
+body.font2,
+body.font2 p,
+body.font2 h1, 
+body.font2 h2,
+body.font2 h3 {
+    font-family: "Courier New", monospace !important; /* Change to your desired font */
+}
+

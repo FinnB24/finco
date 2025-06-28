@@ -9,6 +9,7 @@
 	var	$window = $(window),
 		$body = $('body');
 
+		
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
@@ -182,4 +183,61 @@
 
 			});
 
+// Theme Toggle Functionality
+$(document).ready(function() {
+    const themeToggle = $('#themeToggle');
+    const body = $('body');
+
+    // Check for saved theme preference
+    const currentTheme = localStorage.getItem('theme');
+
+    // Apply the saved theme or default to dark if no preference
+    if (currentTheme === 'light') {
+        body.addClass('light-theme');
+        if (themeToggle.length) { // Only if toggle exists on this page
+            themeToggle.prop('checked', false);
+        }
+    } else {
+        // Default to dark theme
+        body.removeClass('light-theme');
+        if (themeToggle.length) { // Only if toggle exists on this page
+            themeToggle.prop('checked', true);
+        }
+    }
+    
+    // Only set up toggle event if toggle exists on this page
+    if (themeToggle.length) {
+        themeToggle.on('change', function() {
+            if ($(this).is(':checked')) {
+                body.removeClass('light-theme');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.addClass('light-theme');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    }
+});
+
+
+// Font Toggle
+const fontToggle = $('#fontToggle');
+const currentFont = localStorage.getItem('font');
+
+if (currentFont === 'font2') {
+    $('body').addClass('font2');
+    fontToggle.prop('checked', true);
+}
+
+fontToggle.on('change', function() {
+    if ($(this).is(':checked')) {
+        $('body').addClass('font2');
+        localStorage.setItem('font', 'font2');
+    } else {
+        $('body').removeClass('font2');
+        localStorage.setItem('font', 'font1');
+    }
+});
+
 })(jQuery);
+
