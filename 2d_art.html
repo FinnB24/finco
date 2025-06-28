@@ -1,123 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
   <title>2D Art | FinnB24</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Showcase of 2D digital art by FinnB24.">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/gallery.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-  <style>
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    .gallery-item {
-      background: #262626;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-      transition: transform 0.2s;
-    }
-    .gallery-item:hover {
-      transform: translateY(-4px) scale(1.02);
-    }
-    .gallery-item img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-    }
-    .gallery-caption {
-      padding: 1rem;
-      color: #eaeaea;
-      text-align: center;
-      font-size: 1rem;
-    }
-    main {
-      background: #262626;
-      color: #eaeaea;
-      border-radius: 1rem;
-      margin: 2rem auto;
-      max-width: 1000px;
-      padding: 2rem;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    }
-    header, nav {
-      background: #202020;
-    }
-    .back-btn {
-      margin-bottom: 2rem;
-      display: inline-block;
-      background: #444;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 0.5rem 1.2rem;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .back-btn:hover {
-      background: #666;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      color: #bbb;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body style="background-color:#343434;">
-  <!-- NAVBAR -->
+<body>
   <header>
-    <nav aria-label="Main navigation">
-      <div class="nav-container" style="max-width:1000px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 0;">
-        <a href="index.html" style="font-weight:bold;color:#eaeaea;letter-spacing:1px;font-size:1.3rem;">FinnB24</a>
-        <ul style="list-style:none;display:flex;gap:2rem;margin:0;padding:0;font-size:1rem;">
-          <li><a href="index.html" style="color:#eaeaea;text-decoration:none;">Home</a></li>
-          <li><a href="who.html" style="color:#eaeaea;text-decoration:none;">Who am I?</a></li>
-          <li><a href="contact.html" style="color:#eaeaea;text-decoration:none;">Contact</a></li>
-          <li><a href="sidequests.html" style="color:#eaeaea;text-decoration:none;">Sidequests</a></li>
-        </ul>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html">FinnB24</a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="2d_art.html" class="active">2D Art</a>
+        <a href="3d_art.html">3D Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
   </header>
   <main>
-    <a href="index.html" class="back-btn" aria-label="Back to Home">&#8592; Back</a>
-    <h1 style="color:#fff;font-size:2.2rem;">2D Art</h1>
-    <p style="color:#bbb;font-size:1.1rem;">
-      Enjoy a showcase of my 2D digital art. Click on any image to view it larger.
-    </p>
-    <section aria-label="2D Art Gallery">
+    <a href="index.html" class="back-btn" aria-label="Back to Home">&larr; Back</a>
+    <h1>2D Art</h1>
+    <p>Enjoy a showcase of my 2D digital and traditional art.</p>
+    <section>
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="images/pic01.jpg" alt="Digital art with vibrant colors">
           <div class="gallery-caption">Digital Art</div>
         </div>
         <div class="gallery-item">
-          <img src="images/pic02.jpg" alt="Abstract piece titled 'Liquid Time'">
+          <img src="images/pic02.jpg" alt="Abstract piece 'Liquid Time'">
           <div class="gallery-caption">Liquid Time</div>
         </div>
         <div class="gallery-item">
-          <img src="images/pic03.jpg" alt="Surreal 2D landscape illustration">
+          <img src="images/pic03.jpg" alt="Surreal 2D landscape">
           <div class="gallery-caption">Surreal Landscape</div>
         </div>
-        <!-- Add more artwork as needed, update captions and alt texts for accessibility -->
+        <!-- Add more artwork here -->
       </div>
     </section>
   </main>
   <footer>
-    &copy; 2025 FinnB24 | <a href="contact.html" style="color:#bbb;">Contact</a>
+    &copy; 2025 FinnB24 &middot; <a href="contact.html" style="color:#fff;text-decoration:underline;">Contact</a>
   </footer>
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
